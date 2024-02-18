@@ -15,5 +15,5 @@ spec:
            - name: myterraform-container
              image: hashicorp/terraform
              ports:
-               - containerPort: 8080
+               - containerPort: 8800
          
