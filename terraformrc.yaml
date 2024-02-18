@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: myterraform-rc
+spec:
+   replicas: 3
+   selector:
+     app: myterraform-pod
+   template:
+    metadata:
+      labels:
+         app: myterraform-po
+    spec:
+         containers:
+           - name: myterraform-container
+             image: hashicorp/terraform
+             ports:
+               - containerPort: 8080
+         
