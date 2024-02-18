@@ -9,7 +9,7 @@ spec:
    template:
     metadata:
       labels:
-         app: myterraform-po
+         app: myterraform-pod
     spec:
          containers:
            - name: myterraform-container
